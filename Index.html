@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="dir">
+<head>
+<title>🤩 Glass UI Login Form 🤩</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Handlee|Fruktur|Miltonian|Permanent+Marker|Comfortaa|Special+Elite|Fredoka+One|Cabin+Sketch|Coiny|Audiowide|Itim|Bungee+Outline|Jua|Gemunu+Libre|Stick+No+Bills|Amatic+SC|Courgette|Sacramento|Neucha|Bad+Script|Poppins|Zen+Kurenaido|Ubuntu|Delius">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/7f8a04b429.js" crossorigin="anonymous"></script>
+<style>
+body {
+background: #000111;
+text-align: center;
+}
+.glass-login {
+height: 450px;
+width: 350px;
+background: rgba(255, 255, 255, 0.01);
+border-radius: 16px;
+box-shadow: 1px 2px 30px darkblue;
+backdrop-filter: blur(2.7px);
+-webkit-backdrop-filter: blur(2.7px);
+border: 1px solid rgba(255, 255, 255, 0.36);
+position: relative;
+top: 40px;
+}
+.lg {
+color: #afafaf;
+font-family: Poppins    ;
+font-size: 41px;
+text-decoration: underline #afafaf;
+}
+#usr {
+background: none;
+border: 2px solid gray;
+padding: 10px;
+font-family: Raleway;
+font-size: 18px;
+border-radius: 10px;
+color: #afafaf;
+outline: none;
+text-align: center;
+}
+#pwd {
+background: none;
+border: 2px solid gray;
+padding: 10px;
+font-family: Raleway;
+font-size: 18px;
+border-radius: 10px;
+color: #afafaf;
+position: absolute;
+right: 39px;
+outline: none;
+text-align: center;
+}
+#sub {
+background: #3acd82;
+padding: 10px;
+border: none;
+width: 120px;
+font-size: 18px;
+position: relative;
+bottom: -10px;
+border-radius: 100px;
+font-family: Raleway;
+font-weight: 600;
+cursor: pointer;
+}
+#sub:active {
+transform: scale(0.75);
+}
+.fa {
+color: #555222;
+position: relative;
+left: 90px;
+bottom: -14px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<center>
+<div class="glass-login">
+<p class="lg">Login:</p>
+<br><br>
+<input type="text" id="usr" placeholder="Username: eg. John Doe" autocomplete="off" required/>
+<br><br>
+<input type="password" id="pwd" placeholder="Password" autocomplete="off" required/>
+<i class="fa fa-eye" id="ii" onclick="showHide(this)"></i>
+<br><br><br>
+<input type="button" id="sub" value="Login"/>
+
+</div>
+</center>
+<script>
+function showHide(aa, x) {
+   x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+    aa = document.getElementById("ii");
+aa.classList.toggle("fa-eye-slash");
+  } else {
+    x.type = "password"; 
+  }
+}
+</script>
+</body>
+</html>
